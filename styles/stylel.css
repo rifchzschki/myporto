@@ -69,6 +69,7 @@ article {
   /* background-color: green; */
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .content-home {
@@ -98,6 +99,27 @@ article {
   color: white;
 }
 
+.active-status {
+  height: 1.5ch;
+  width: 1.5ch;
+  background-color: #62d901;
+  border-radius: 50%;
+  display: inline-block;
+}
+.content-container-home div {
+  display: flex;
+  align-items: center;
+}
+.content-container-home figure img {
+  width: 2ch;
+  height: 2ch;
+}
+
+.content-container-home figure {
+  display: flex;
+  align-items: center;
+}
+
 .button-start {
   background-color: #3f8e00;
   color: white;
@@ -108,9 +130,18 @@ article {
   text-align: center;
 }
 
-.fig-image img {
-  width: 100%;
+.fig-image {
+  width: 40%;
   height: 100%;
+  /* background-color: white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fig-image img {
+  height: 80%;
+  width: auto;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -258,6 +289,12 @@ article {
   display: flex;
   flex-direction: column;
   color: white;
+}
+
+.still-learn img {
+  width: 100px;
+  height: 100px;
+  border-radius:0%;
 }
 
 .projects-list {
