@@ -297,6 +297,7 @@ h1 {
   }
   .card {
     flex-direction: column;
+    width: 100%;
   }
   .card figure {
     height: 30%;
@@ -447,6 +448,9 @@ h1 {
 }
 
 @media (max-width: 600px) {
+  figcaption {
+    font-size: 12px;
+  }
   .projects-list {
     display: flex;
     flex-direction: column;
@@ -583,6 +587,4 @@ h1 {
   .container-contact textarea {
     font-size: 12px;
   }
-  
-
 }
