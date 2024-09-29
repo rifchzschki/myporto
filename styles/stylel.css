@@ -8,6 +8,14 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+.active-button {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.active-button:hover {
+  transform: scale(1.05);
+}
 
 p {
   font-family: "IBM Plex Mono", monospace;
