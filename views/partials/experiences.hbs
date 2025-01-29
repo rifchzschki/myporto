@@ -1,0 +1,76 @@
+<article class="about" id="about">
+  <div class="container-about">
+    {{!-- Education --}}
+    <section>
+      <h2 href="#about" class="active-button">Education</h2>
+      {{#each education}}
+      <div class="active-button card">
+        <figure>
+          <img src="assets/logo-itb.jpg" alt="" />
+        </figure>
+        <div class="content-card-about">
+          <div>
+            <h3>{{this.institution}}</h3>
+          </div>
+          <p>Major {{this.major}}</p>
+          <p>
+            Relevant courses: 
+            {{#each this.relevantCourses}}
+            <span>
+              {{this}}{{#unless @last}},{{/unless}}
+            </span>
+            {{/each}}
+          </p>
+          <p>2022 – Present</p>
+        </div>
+      </div>
+      {{/each}}
+    </section>
+    {{!-- Education --}}
+    {{!-- Internships --}}
+    <section id="internships">
+      <h2 href="#internships" class="active-button">Internships</h2>
+      {{#each intern}}
+      <div class="active-button card">
+        <figure>
+          <img src="assets/{{this.imageName}}" style="border-radius: 0%" alt="" />
+        </figure>
+        <div class="content-card-about">
+          <div>
+            <h3>{{this.company}}</h3>
+          </div>
+          <p>{{this.role}}</p>
+          <ul>
+            {{#each this.responsibilities}}
+              <li>• {{this}}</li>
+            {{/each}}
+          </ul>
+          <p>{{this.startDate}} – {{this.endDate}}</p>
+        </div>
+      </div>
+      {{/each}}
+    </section>
+    {{!-- Internships --}}
+    {{!-- Leaderships --}}
+    <section id="leaderships">
+      <h2 href="#leaderships" class="active-button">Leaderships</h2>
+      {{#each leadership}}
+        <div class="active-button card">
+          <figure>
+            <img src="assets/{{this.imageName}}" style="border-radius: 0%" alt="" />
+          </figure>
+          <div class="content-card-about">
+            <div>
+              <h3>{{this.organization}}</h3>
+            </div>
+            <p>{{this.role}}</p>
+            <p>
+              {{this.description}}
+            </p>
+          </div>
+        </div>
+      {{/each}}
+    </section>
+    {{!-- Leaderships --}}
+  </div>
+</article>

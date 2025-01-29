@@ -1,0 +1,61 @@
+<article class="contact" id="contact">
+  <div class="container-contact">
+    <h2 href="#contact" class="active-button">Contact me</h2>
+    <div class="card">
+      <form id="contact-form" class="contact-form">
+        <div class="input-container">
+          <label for="contact_number">Contact Number</label>
+          <input
+            type="number"
+            id="contact_number"
+            name="contact_number"
+            placeholder="Enter contact number"
+          />
+        </div>
+        <div class="input-container">
+          <label for="user_name">Name</label>
+          <input
+            type="text"
+            id="user_name"
+            name="user_name"
+            placeholder="Please enter your name"
+          />
+        </div>
+        <div class="input-container">
+          <label for="user_email">Email</label>
+          <input
+            type="email"
+            id="user_email"
+            name="user_email"
+            placeholder="Please enter your email"
+          />
+        </div>
+        <div class="input-container">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Type your message"
+          ></textarea>
+        </div>
+        <div class="submit-contact">
+          <input type="submit" value="Send" class="active-button" />
+        </div>
+      </form>
+      <div class="contact-button">
+        or
+        <div class="other-contact">
+          <a href="{{profile.links.Github}}" class="active-button">
+            <img src="/assets/github-mark.svg" alt="GitHub Logo" />
+            rifchzschki
+          </a>
+          <a href="{{profile.links.LinkedIn}}" class="active-button">
+            <img src="/assets/LI-In-Bug.png" alt="GitHub Logo" />
+            Rifki Virzya
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</article>

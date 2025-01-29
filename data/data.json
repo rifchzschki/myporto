@@ -1,0 +1,612 @@
+{
+  "personalInformation": {
+    "name": "Rifki Virzya",
+    "location": "Bandung, Indonesia",
+    "email": "rifkivirziadeili@gmail.com",
+    "phone": "+6282130363211",
+    "links": {
+      "LinkedIn": "https://www.linkedin.com/in/rifki-virzya-851bb6284/",
+      "Github": "https://github.com/rifchzschki"
+    },
+    "description": "I am an active student majoring in Computer Science at Bandung Institute of Technology. I am a passionate and dedicated fullstack developer."
+  },
+  "education": [
+    {
+      "institution": "Bandung Institute of Technology",
+      "location": "West Java, Indonesia",
+      "major": "Informathics Engineering",
+      "relevantCourses": [
+        "Web Application Development",
+        "Algorithm and Data Structure",
+        "Object Oriented Programming",
+        "Algorithm Strategy",
+        "Artificial Intelligence",
+        "Operating System",
+        "Computer Network",
+        "Organization and Computer Architecture"
+      ],
+      "startYear": 2022,
+      "endYear": "Present"
+    }
+  ],
+  "internships": [
+    {
+      "company": "MarkAny* GaneshaIT",
+      "imageName": "markany.png",
+      "role": "Research and Development",
+      "location": "West Java, Indonesia",
+      "startDate": "January 2024",
+      "endDate": "February 2024",
+      "responsibilities": [
+        "Conducted research on methodologies for document verification, image quality enhancement, perspective correction, and OCR implementation.",
+        "Performed gap analysis based on published research papers.",
+        "Identified novel approaches by exploring research gaps.",
+        "Conducted experiments by implementing identified methods."
+      ]
+    },
+    {
+      "company": "MarkAny* GaneshaIT",
+      "imageName": "markany.png",
+      "role": "Research and Development",
+      "location": "West Java, Indonesia",
+      "startDate": "June 2024",
+      "endDate": "August 2024",
+      "responsibilities": [
+        "Collecting datasets and training machine learning models.",
+        "Collaborated with a team to develop a robust document verification program.",
+        "Published a research paper: \"One-Shot Verification for Paper Certificates in Public Service System\", highlighting a novel approach to verifying documents in public service systems.",
+        "Tools and Technologies: YOLOv8, OCR libraries, Python"
+      ]
+    }
+  ],
+  "keySkills": [
+    {
+      "category": "Fullstack Development",
+      "skills": [
+        "NEXT.js",
+        "React.js",
+        "Tailwind CSS",
+        "PHP (Laravel Framework)",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "category": "Backend Development",
+      "skills": [
+        "NestJS",
+        "Prisma",
+        "Node.js",
+        "Fastify",
+        "Golang",
+        "Express.js"
+      ]
+    },
+    {
+      "category": "Frontend Development",
+      "skills": [
+        "Responsive design",
+        "Component-based architecture",
+        "Tailwind CSS",
+        "Vanilla JavaScript",
+        "Templating"
+      ]
+    },
+    {
+      "category": "API Development",
+      "skills": ["RESTful APIs", "Swagger"]
+    },
+    {
+      "category": "Secure Authentication",
+      "skills": [
+        "JWT",
+        "Passport-JWT",
+        "AES256",
+        "OAuth (NextAuth)",
+        "Secure Session Management"
+      ]
+    },
+    {
+      "category": "Database Management",
+      "skills": [
+        "PostgreSQL",
+        "Supabase",
+        "MySQL",
+        "SQLite",
+        "Docker",
+        "ORM (Prisma)"
+      ]
+    },
+    {
+      "category": "Machine Learning",
+      "skills": [
+        "End-to-End ML Pipelines",
+        "Algorithm Implementation (KNN, Naive Bayes, ID3)",
+        "Integration with scikit-learn, YOLOv8, Paddle-OCR"
+      ]
+    },
+    {
+      "category": "Software Development Principles",
+      "skills": ["OOP", "Design Patterns", "Agile Development Practices"]
+    },
+    {
+      "category": "Python Development",
+      "skills": ["OpenCV", "AI Integration", "Automation Scripts"]
+    },
+    {
+      "category": "Desktop Applications",
+      "skills": ["Java", "C#", "Flet"]
+    },
+    {
+      "category": "DevOps Basics",
+      "skills": ["Docker Compose", "CI/CD Pipelines"]
+    }
+  ],
+  "projects": [
+    {
+      "category": "Web Applications",
+      "list": [
+        {
+          "name": "LinkedIn Web App Part 1",
+          "imageName": "LinkedInPurry1.png",
+          "repo": "https://github.com/rifchzschki/LinkedIn-Purry-part-1",
+          "contributors": [
+            "Rifki Virzya",
+            "Abdul Rafi Radityo Hutomo",
+            "Saad Abdul Hakim"
+          ],
+          "technologies": [
+            "PHP",
+            "HTML Templating",
+            "Prisma",
+            "Docker",
+            "Local PostgreSQL"
+          ],
+          "description": "Designed and developed the job seeker and company views of a LinkedIn-inspired web application. Key features include user authentication, job management, job search, and application submission.",
+          "features": [
+            "CRUD operations",
+            "Advanced job search and filtering",
+            "Application status management (accept/deny)"
+          ]
+        },
+        {
+          "name": "LinkedIn Web App Part 2",
+          "imageName": "LinkedInPurry2.png",
+          "repo": "https://github.com/rifchzschki/LinkedIn-Purry-Part-2",
+          "contributors": [
+            "Rifki Virzya",
+            "Abdul Rafi Radityo Hutomo",
+            "Saad Abdul Hakim"
+          ],
+          "technologies": [
+            "Fastify",
+            "React.js",
+            "Prisma",
+            "Docker",
+            "Local PostgreSQL",
+            "Tailwind CSS"
+          ],
+          "description": "Expanded the LinkedIn Web App with a user-focused view. Implemented features like user authentication, profile management, connection handling, chat, notifications, and a dynamic feed system.",
+          "features": [
+            "User authentication",
+            "Profile management",
+            "Connection handling",
+            "Chat functionality",
+            "Dynamic feed system",
+            "Notifications"
+          ]
+        },
+        {
+          "name": "Pemilu HMIF Website",
+          "imageName": "PemiluHMIF.png",
+          "repo": "https://github.com/rifchzschki/Web-Pemilu-HMIF-2025",
+          "contributors": [
+            "Rifki Virzya",
+            "Francisco Trianto",
+            "Venantius Sean Ardi Nugroho",
+            "Muhammad Raihaan Perdana",
+            "Mahesa Fadhillah Andre",
+            "Rafly Hanggaraksa"
+          ],
+          "technologies": [
+            "NEXT.js",
+            "OAuth (NextAuth)",
+            "Supabase PostgreSQL",
+            "Prisma"
+          ],
+          "description": "Developed a voting platform for HMIF with features like voting, profile viewing, and candidate pages. The system uses Google OAuth authentication restricted to specific organizational emails for secure access.",
+          "features": [
+            "Tata Cara page",
+            "Aturan page",
+            "Coblos page",
+            "Profile and Candidate pages",
+            "Google OAuth authentication"
+          ]
+        },
+        {
+          "name": "Nelfix (Streaming Movies App)",
+          "imageName": "nelfix.png",
+          "repo": "https://github.com/rifchzschki/Nelfix",
+          "contributors": ["Rifki Virzya"],
+          "technologies": ["NestJS", "Prisma", "Supabase", "Handlebars"],
+          "description": "Created a movie streaming platform with user-friendly features like authentication, account management, movie catalog management, and a rating and review system.",
+          "features": [
+            "User authentication",
+            "Account management",
+            "Movie catalog management",
+            "Rating and review system"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Machine Learning Projects",
+      "list": [
+        {
+          "name": "Data Exploration, Analysis, and Evaluation & Modeling (Supervised Learning)",
+          "imageName": "supervised.png",
+          "repo": "https://github.com/rifchzschki/Evaluation-modeling-self-implementation-AI-algorithm-KNN-Naive-Bayes-ID3",
+          "contributors": ["Rifki Virzya"],
+          "technologies": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Scikit-learn",
+            "Tensorflow",
+            "Scipy",
+            "Seaborn",
+            "Matplotlib"
+          ],
+          "description": "This project implements KNN, ID3, and Naive Bayes algorithms to predict the attack_cat from the UNSW-NB15 dataset. It includes EDA, data cleaning (handling missing data, outliers, duplicates, and feature engineering), preprocessing (scaling, encoding, balancing, normalization, and dimensionality reduction), pipeline creation, modeling, and evaluation with K-fold cross-validation. The performance is measured using the f1 score metric.",
+          "features": [
+            "Exploration Data Analysis",
+            "Data cleaning and preprocessing",
+            "Pipeline",
+            "Modeling and Evaluation with self implemented algorithm",
+            "Validation using K-fold Cross Validation"
+          ]
+        },
+        {
+          "name": "Document Verification",
+          "imageName": "Document-Verification.png",
+          "repo": "https://github.com/rifchzschki/Document-verification",
+          "contributors": [
+            "Rifki Virzya",
+            "Maulvi Ziadinda Maulana",
+            "Raditya Aditama"
+          ],
+          "technologies": [
+            "Python 3.9.10",
+            "Paddle OCR (PPOCR V4)",
+            "YOlOv8",
+            "PyBoof",
+            "Image Segmentation",
+            "Image Enhancement",
+            "Pattern Matching Algorithm",
+            "Perspective Correction"
+          ],
+          "description": "Document Verification is the implementation of the program described in the paper \"One-shot Verification of Paper Certificates with Robust Preprocessing.\" This program consists of several processing stages: preprocessing, text extraction, QR extraction, and verification. Due to certain limitations, our implementation does not include storage on the blockchain. Therefore, during verification, the program is assumed to have already received the original value (pattern). The output of the program is the validity status of the certificate.",
+          "features": [
+            "Capturing Image",
+            "Preprocessing",
+            "Evaluation",
+            "QR detection",
+            "Verification information"
+          ]
+        },
+        {
+          "name": "Magic Cube Solver",
+          "imageName": "implementationAI.png",
+          "repo": "https://github.com/rifchzschki/Self-Implementation-Local-Search-Algorithm-AI",
+          "contributors": [
+            "Rifki Virzya",
+            "Mohammad Nugraha Eka Prawira",
+            "Ahmad Farid Mudrika",
+            "Yusuf Rafi"
+          ],
+          "technologies": ["Python", "React.js", "Tailwind CSS", "Django"],
+          "description": "This project is a Magic Cube 5x5 solver implemented in Python, featuring various self-implemented local search algorithms such as Steepest Ascent Hill Climbing, Hill Climbing with Sideways Moves, Stochastic Hill Climbing, Random Restart Hill Climbing, Simulated Annealing, and Genetic Algorithm. The results are presented through a modern Single Page Application (SPA) built with React.js, providing an interactive and user-friendly interface for exploring the performance of these algorithms.",
+          "features": [
+            "Solve magic cube 5x5 using Steepest Ascent Hill Climbing",
+            "Solve magic cube 5x5 using Hill Climbing with Sideways Moves",
+            "Solve magic cube 5x5 using Stochastic Hill Climbing ",
+            "Solve magic cube 5x5 using Random Restart Hill Climbing ",
+            "Solve magic cube 5x5 using Simulated Annealing ",
+            "Solve magic cube 5x5 using Genetic Algorithm "
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Desktop Applications",
+      "list": [
+        {
+          "name": "Molinana (Game)",
+          "imageName": "molinana.png",
+          "repo": "https://github.com/rifchzschki/MoliNana-GUI-Version",
+          "contributors": [
+            "Rifki Virzya",
+            "Ahmad Naufal Ramadan",
+            "Muhammad Dava Fathurrahman",
+            "Yusuf Ardian Sandi",
+            "Saad Abdul Hakim"
+          ],
+          "technologies": ["Java", "OOP", "MVC", "Design Patterns"],
+          "description": "Developed a farming and livestock simulation game called 'Molinana,' utilizing OOP best practices, MVC structure, and design patterns. The game allows two players to manage their farms, plant crops, raise animals, and sell cards for money over 20 turns, with a save/load feature and bear attack challenges to enhance gameplay.",
+          "features": [
+            "Two-player mode",
+            "Farming and livestock simulation",
+            "Save/load feature",
+            "Bear attack challenges"
+          ]
+        },
+        {
+          "name": "Fingerprint Matching App",
+          "imageName": "sidik-jari.png",
+          "contributors": [
+            "Rifki Virzya",
+            "Tazkia Nizami",
+            "Yusuf Ardian Sandi"
+          ],
+          "repo": "https://github.com/rifchzschki/Fingerprint-Recognition-System-with-String-Matching-Algorithm",
+          "technologies": [
+            "AES256 encryption",
+            "C#",
+            "KMP algorithm",
+            "Boyer-Moore algorithm"
+          ],
+          "description": "Developed a desktop application for fingerprint matching using KMP and Boyer-Moore algorithms, transforming fingerprint images into ASCII characters and matching them with a database. Implemented AES 128 encryption to secure personal data, storing it as ciphertext in the database and decrypting when needed.",
+          "features": [
+            "Fingerprint matching algorithms (KMP, Boyer-Moore)",
+            "AES 128 encryption for data security",
+            "Fingerprint image transformation to ASCII",
+            "Database storage and retrieval"
+          ]
+        },
+        {
+          "name": "Cinema Ticket Booking App",
+          "imageName": "cinema.png",
+          "repo": "https://gitlab.informatika.org/Panji16/if2250-2024-k02-04-aplikasi-kasir-bioskop-48/",
+          "contributors": [
+            "Rifki Virzya",
+            "Panji Sri Kuncara",
+            "Diero Arga Purnama",
+            "Muhammad Syarafi Akmal",
+            "Imam Hanif Mulyarahman",
+            "Miftahul Jannah"
+          ],
+          "technologies": ["Flet", "Python"],
+          "description": "Developed a cinema ticket booking app allowing users to browse available movies, select showtimes, and book tickets in a user-friendly interface. The application provides a seamless and interactive booking experience with real-time updates and ticket management.",
+          "features": [
+            "Movie browsing and showtime selection",
+            "Ticket booking and management",
+            "Real-time updates",
+            "Interactive user interface"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Other Projects",
+      "list": [
+        {
+          "name": "Calculator Matrix",
+          "imageName": "calculator-matrix.png",
+          "repo": "https://github.com/rifchzschki/Matrix-Solver-with-Real-Problem-Implementation-Upsize-Image",
+          "contributors": [
+            "Rifki Virzya",
+            "Mohammad Nugraha Eka Prawira",
+            "Yusuf Rafi"
+          ],
+          "technologies": ["Java"],
+          "description": "This Java program handles mathematical operations such as solving systems of linear equations, calculating determinants, finding matrix inverses, and performing interpolation. It uses methods like Gaussian Elimination, Cramer's Rule, and Polynomial Interpolation to ensure accurate computations. Additionally, it includes features for image enlargement using Bicubic Spline Interpolation for smooth and accurate scaling.",
+          "features": [
+            "Systems of Linear Equations",
+            "Determinants",
+            "Matrix Inversion",
+            "Interpolation",
+            "Multiple Linear Regression",
+            "Image Enlargement Using Bicubic Spline Interpolation"
+          ]
+        },
+        {
+          "name": "Cyberpunk 2077 Breach Protocol Solver with Brute Force",
+          "imageName": "breach-protocol.png",
+          "repo": "https://github.com/rifchzschki/Cyberpunk-2077-Breach-Protocol-Solver-with-Brute-Force",
+          "contributors": ["Rifki Virzya"],
+          "technologies": ["Python", "Brute force algorithm"],
+          "description": "This program is a simple tool designed to solve the Cyberpunk 2077 Breach Protocol mini-game using a brute-force algorithm. It systematically explores all possible sequences to find the optimal solution that satisfies the game's buffer and code requirements. The program is straightforward and efficient, making it a practical helper for players.",
+          "features": ["Solve mini game breach protocol"]
+        },
+        {
+          "name": "Wikirace Solver using BFS and IDS Algorithm",
+          "imageName": "wikirace/3BFSa.png",
+          "imageFolderName": "wikirace",
+          "repo": "https://github.com/rifchzschki/Wikirace-Solver-using-BFS-and-IDS-Algorithm",
+          "contributors": ["Rifki Virzya", "Mohammad Nugraha Eka Prawira"],
+          "technologies": [
+            "Golang",
+            "HTML",
+            "CSS",
+            "Javascript",
+            "Docker",
+            "Iterative Deepening Search (IDS)",
+            "Best-First Search (BFS)",
+            "Web Scrapping"
+          ],
+          "description": "The Wikirace Solver program uses BFS (Breadth-First Search) and IDS (Iterative Deepening Search) algorithms to find paths between Wikipedia pages efficiently. BFS explores all nodes at the same depth level first, ensuring the shortest path in unweighted graphs, while IDS combines depth-limited search with iterative depth increases to save memory. The program features a web-based interface, making it user-friendly for solving Wikirace challenges.",
+          "features": [
+            "Search path wikirace using BFS algorithm",
+            "Search path wikirace using IDS algorithm"
+          ]
+        },
+        {
+          "name": "Word Ladder Solver",
+          "imageName": "word-ladder.png",
+          "repo": "https://github.com/rifchzschki/Word-Ladder-Solver-using-Path-Finding-Algorithm",
+          "contributors": ["Rifki Virzya"],
+          "technologies": [
+            "Java",
+            "Uniform Cost Search (UCS)",
+            "Greedy Best-First Search",
+            "A-Star (A*)"
+          ],
+          "description": "This Word Ladder Solver uses pathfinding algorithms like UCS, Greedy Best-First Search, and A* to find the shortest transformation sequence between words. It evaluates paths based on cost, heuristics, or a combination of both, ensuring efficient and accurate solutions. The program is designed for flexibility and effective word transformation solving.",
+          "features": [
+            "Solve Word Ladder game using three algorithms path finding"
+          ]
+        },
+        {
+          "name": "Mini DBMS CLI Version",
+          "imageName": "mini-DBMS.png",
+          "repo": "https://github.com/rifchzschki/Simple-DBMS-implementation-CLI-Version",
+          "contributors": [
+            "Rifki Virzya",
+            "Fedrianz Dharma",
+            "Rayhan Fadhlan",
+            "Moh Fairuz Alauddin Yahya",
+            "Julian Chandra Sutadi",
+            "Adril Putra Merin",
+            "Yusuf Ardian Sandi",
+            "Naufal Adnan",
+            "Aurelius Justin",
+            "Ahmad Naufal Ramadan",
+            "salsabiila",
+            "Maximilian Sulistiyo",
+            "Muhammad Gilang Ramadhan",
+            "Muhammad Dava Fathurrahman",
+            "Diana",
+            "Novelya Putri Ramadhani",
+            "Kayla Namira Mariadi",
+            "Haikal",
+            "Gilang",
+            "Saad Abdul Hakim",
+            "Fabian Radenta Bangun"
+          ],
+          "technologies": ["Python"],
+          "description": "This mini DBMS project, developed from scratch in Python, is divided into five key components, each handled by a dedicated group. The Query Processor parses and processes user queries, while the Query Optimizer enhances query execution efficiency. The Concurrency Control Manager ensures proper synchronization and isolation for concurrent transactions. The Storage Manager oversees data storage, retrieval, and indexing, and the Failure Recovery Manager handles system recovery to maintain data integrity in case of failures. Together, these modules replicate essential DBMS functionalities.",
+          "features": [
+            "Query Processor",
+            "Query Optimizer",
+            "Concurrency Control Manager",
+            "Storage Manager",
+            "Failure Recovery Manager"
+          ]
+        },
+        {
+          "name": "2048 Solver",
+          "imageName": "2048-img.png",
+          "repo": "https://github.com/rifchzschki/2048-In-Python",
+          "contributors": ["Rifki Virzya"],
+          "technologies": ["Python", "Greedy algorithm"],
+          "description": "This project is a 2048 solver utilizing a greedy algorithm, offering two gameplay modes: auto-play, where the algorithm automatically makes moves to maximize the score, and self-control play, allowing users to manually play the game. It demonstrates AI-driven decision-making alongside interactive gameplay.",
+          "features": [
+            "Self-control play 2048",
+            "Auto play 2048 with greedy algorithm"
+          ]
+        },
+        {
+          "name": "Bezier Curve Implementation",
+          "imageName": "Bezier.png",
+          "repo": "https://github.com/rifchzschki/Bezier-Curve-Implementation",
+          "contributors": ["Rifki Virzya", "Ahmad Farid Mudrika"],
+          "technologies": [
+            "Python - version 3.12.0",
+            "Matplotlib - version 3.8.3"
+          ],
+          "description": "This project is a Python-based visualization tool for Bézier curves, supporting both brute force and divide-and-conquer algorithms. It allows users to visualize quadratic Bézier curves and Bézier curves with n control points, showcasing the divide-and-conquer approach. Additionally, the program measures and displays the computation time for each visualization, providing insights into algorithm efficiency.",
+          "features": [
+            "Visualizing quadratic Bézier curves using the divide and conquer algorithm.",
+            "Visualizing quadratic Bézier curves using brute force.",
+            "Visualizing Bézier curves with n control points using the divide and conquer algorithm.",
+            "Displaying the computation time required for visualization."
+          ]
+        }
+      ]
+    }
+  ],
+  "research": [
+    {
+      "title": "Pemanfaatan Teori Bilangan dalam Penentuan Penghuni Kamar di Asrama Kidang Pananjung",
+      "imageName": "RNG.png",
+      "paper": "https://informatika.stei.itb.ac.id/~rinaldi.munir/Matdis/2023-2024/Makalah2023/Makalah-Matdis-2023%20(120).pdf",
+      "abstract": "Asrama Kidang Pananjung ITB adalah salah satu asrama yang disediakan ITB untuk para mahasiswanya. Pada saat proses pendaftaran, pendaftar asrama akan mendapatkan nomor kamar secara acak. Penggunaan konsep teori bilangan dapat membantu dalam melakukan pengacakan nomor kamar tersebut. Pada teori bilangan kita mengenal Aritmatika Modulo dan Pembangkit Bilangan Acak (LCG). Selain itu, knuth shuffle juga merupakan algoritma yang dapat menghasilkan bilangan acak dengan baik. Makalah ini akan membahas bagaimana penerapan konsep teori bilangan pada penentuan anggota tiap kamar di Asrama Kidang Pananjung ITB.",
+      "contributors": ["Rifki Virzya"],
+      "year": "2023"
+    },
+    {
+      "title": "Aplikasi Algoritma Greedy dalam Pemecahan Solusi Permainan 2048",
+      "imageName": "2048.png",
+      "paper": "https://informatika.stei.itb.ac.id/~rinaldi.munir/Stmik/2023-2024/Makalah/Makalah-IF2211-Stima-2024%20(116).pdf",
+      "abstract": "Permainan 2048 adalah permainan teka-teki berbasis grid yang telah menarik perhatian banyak peneliti di bidang kecerdasan buatan dan algoritma pencarian. Dalam penelitian ini, akan dilakukan eksplorasi pendekatan algoritma greedy untuk menyelesaikan permainan 2048. Algoritma greedy adalah metode yang memilih langkah terbaik pada setiap langkah tanpa mempertimbangkan konsekuensi jangka panjang. Penelitian ini bertujuan untuk menganalisis efektivitas heuristik greedy dalam mencapai skor tertinggi di permainan 2048.",
+      "contributors": ["Rifki Virzya"],
+      "year": "2024"
+    },
+    {
+      "title": "One-Shot Verification for Paper Certificates in Public Service System",
+      "imageName": "one-shot-new.png",
+      "paper": "soon...",
+      "abstract": "Even if an explosive number of proposals and prototype systems of blockchain based certificates and verification have been suggested and implemented since 2015, still in the public service areas paper certificates are prevalent.  Because of advancement of color duplication and editing tools obtainable at almost no price in the internet, paper certificates are easily forged and modified. For the reason, the verification technology of the paper certificates needs need regressive research and can provide abundant research opportunities. In this research, various research suggestions and technical implementation are reviewed and a new system, called ‘one-shot’ verification is briefly described. The one-shot verification captures the image and QR code of the printed certificates with mobile devices before sending them to block-chained server. The block-chained server decides whether the printed certificates are tampered or not, with the OCR content by comparing hash value with hash value of the original content. The image OCR of the paper was trained with more than 1,700 images using YOLOv8. In the testing with preprocessing, the technology showed 96% accuracy.",
+      "contributors": [
+        "Rifki Virzya",
+        "Raditya Aditama",
+        "Maulvi Ziadinda Maulana",
+        "Agus Haryanto",
+        "Teguh Trianung Djoko Susanto"
+      ],
+      "year": "2024"
+    }
+  ],
+  "leadershipAndActivities": [
+    {
+      "role": "Founder",
+      "imageName": "naik-level.png",
+      "organization": "Kacapruk.naikLevel",
+      "responsibilities": [
+        "Led the initiative to establish and develop the tutoring program.",
+        "Managed data and archives effectively using Google Spreadsheets.",
+        "Proposed and spearheaded innovative strategies to improve services."
+      ],
+      "description": "Kacapruk.naikLevel is an educational organization providing tutoring services for first-year university students"
+    },
+    {
+      "role": "Chief Executive SPS ITB",
+      "imageName": "ps.png",
+      "organization": "Persatuan Sepakbola ITB",
+      "responsibilities": [
+        "Led the initiative to establish and develop the tutoring program.",
+        "Managed data and archives effectively using Google Spreadsheets.",
+        "Proposed and spearheaded innovative strategies to improve services."
+      ],
+      "description": "SPS ITB is an onboarding and training program for the student organization, ITB Football Association (Persatuan Sepak Bola ITB), designed to nurture and develop new members."
+    },
+    {
+      "role": "Head of Futsal Competition",
+      "imageName": "steik.png",
+      "organization": "STEIK CUP 2023",
+      "responsibilities": [
+        "Led the initiative to establish and develop the tutoring program.",
+        "Managed data and archives effectively using Google Spreadsheets.",
+        "Proposed and spearheaded innovative strategies to improve services."
+      ],
+      "description": "STEIK CUP is an annual competition held by the STEIK faculty at ITB, encompassing both physical and non-physical sports events."
+    }
+  ],
+  "attributes": {
+    "softSkills": [
+      "Collaboration & Teamwork",
+      "Problem-Solving",
+      "Leadership",
+      "Innovation",
+      "Adaptability",
+      "Attention to Detail",
+      "Management"
+    ],
+    "languages": ["Indonesian", "English", "Sundanese"],
+    "interests": [
+      "Software Engineering",
+      "Machine Learning",
+      "Competitive Programming"
+    ]
+  }
+}

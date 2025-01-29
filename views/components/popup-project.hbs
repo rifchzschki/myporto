@@ -1,0 +1,40 @@
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <div class="close-button" onclick="{{closeFunction}}">×</div>
+    <div class="content">
+      <div class="popup-fig">
+        <img src="assets/{{imageName}}" alt="" />
+        <a href="{{repo}}">Repository</a>
+        <h4>Contributors: </h4>
+        <ul>
+          {{#each contributors}}
+          <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="popup-info">
+        <h1>{{name}}</h1>
+        <div class="tech-feat">
+          <div>
+            <h4>Technologies</h4>
+            <ul>
+              {{#each technologies}}
+                <li>{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+          <div>
+            <h4>Features</h4>
+            <ul>
+              {{#each features}}
+                <li>{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+        <h4>Description</h4>
+        <p>{{description}}</p>
+      </div>
+    </div>
+  </div>
+</div>

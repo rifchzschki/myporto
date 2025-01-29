@@ -1,0 +1,23 @@
+<div id="popup-research" class="popup">
+  <div class="popup-content">
+    <div class="close-button" onclick="{{closeFunction}}">×</div>
+    <div class="content">
+      <div class="popup-fig">
+        <img src="assets/{{imageName}}" alt="" />
+        <a href="{{paper}}">Paper</a>
+        <h4>Contributors: </h4>
+        <ul>
+          {{#each contributors}}
+          <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="popup-info">
+        <h1>{{title}}</h1>
+        <h4>Abstract</h4>
+        <p>{{abstract}}</p>
+        <p>{{year}}</p>
+      </div>
+    </div>
+  </div>
+</div>
