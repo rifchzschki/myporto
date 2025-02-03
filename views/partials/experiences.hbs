@@ -1,6 +1,5 @@
 <article class="about" id="about">
   <div class="container-about">
-    {{!-- Education --}}
     <section>
       <h2 href="#about" class="active-button">Education</h2>
       {{#each education}}
@@ -12,7 +11,7 @@
           <div>
             <h3>{{this.institution}}</h3>
           </div>
-          <p>Major {{this.major}}</p>
+          <h4>{{this.major}}</h4>
           <p>
             Relevant courses: 
             {{#each this.relevantCourses}}
@@ -26,8 +25,6 @@
       </div>
       {{/each}}
     </section>
-    {{!-- Education --}}
-    {{!-- Internships --}}
     <section id="internships">
       <h2 href="#internships" class="active-button">Internships</h2>
       {{#each intern}}
@@ -39,7 +36,7 @@
           <div>
             <h3>{{this.company}}</h3>
           </div>
-          <p>{{this.role}}</p>
+          <h4>{{this.role}}</h4>
           <ul>
             {{#each this.responsibilities}}
               <li>• {{this}}</li>
@@ -50,8 +47,6 @@
       </div>
       {{/each}}
     </section>
-    {{!-- Internships --}}
-    {{!-- Leaderships --}}
     <section id="leaderships">
       <h2 href="#leaderships" class="active-button">Leaderships</h2>
       {{#each leadership}}
@@ -63,7 +58,7 @@
             <div>
               <h3>{{this.organization}}</h3>
             </div>
-            <p>{{this.role}}</p>
+            <h4>{{this.role}}</h4>
             <p>
               {{this.description}}
             </p>
@@ -71,6 +66,20 @@
         </div>
       {{/each}}
     </section>
-    {{!-- Leaderships --}}
+    <section id="still-learn" class="still-learn">
+      <h2 href="#still-learn" class="active-button">Still Learn</h2>
+      <div class="card">
+        {{#each skills}}
+          <div class="skill-card">
+            <h4>{{this.category}}</h4>
+            <ul>
+              {{#each this.skills}}
+                <li>{{this}}</li>
+              {{/each }}
+            </ul>
+          </div>
+        {{/each}}
+      </div>
+    </section>
   </div>
 </article>

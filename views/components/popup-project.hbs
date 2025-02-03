@@ -6,9 +6,9 @@
         <img src="assets/{{imageName}}" alt="" />
         <a href="{{repo}}">Repository</a>
         <h4>Contributors: </h4>
-        <ul>
+        <ul class="contributor-list">
           {{#each contributors}}
-          <li>{{this}}</li>
+          <li>• {{this}}</li>
           {{/each}}
         </ul>
       </div>
@@ -19,7 +19,7 @@
             <h4>Technologies</h4>
             <ul>
               {{#each technologies}}
-                <li>{{this}}</li>
+                <li>• {{this}}</li>
               {{/each}}
             </ul>
           </div>
@@ -27,7 +27,7 @@
             <h4>Features</h4>
             <ul>
               {{#each features}}
-                <li>{{this}}</li>
+                <li>• {{this}}</li>
               {{/each}}
             </ul>
           </div>

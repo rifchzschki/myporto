@@ -1,28 +1,12 @@
 <article class="projects" id="projects">
   <div class="container-projects">
-    <section id="still-learn" class="still-learn">
-      <h2 href="#still-learn" class="active-button">Still Learn</h2>
-      <div class="card">
-        {{#each skills}}
-          <div class="skill-card">
-            <h4>{{this.category}}</h4>
-            <ul>
-              {{#each this.skills}}
-                <li>{{this}}</li>
-              {{/each }}
-            </ul>
-          </div>
-        {{/each}}
-      </div>
-    </section>
     <section id="project">
       {{#each projects}}
       <h2>{{this.category}}</h2>
-      <div class="projects-list-container">
-        <div class="projects-list">
-          <div class="hidden" id="{{this.category}}"></div>
+      <div class="hidden" id="{{this.category}}"></div>
+      <div class="wrapper">
           {{#each this.list}}
-          <div class="active-button card">
+          <div class="active-button item">
             <figure>
               <img 
                 src="assets/{{this.imageName}}" 
@@ -34,16 +18,15 @@
             </figure>
           </div>
           {{/each}}
-        </div>
       </div>
       {{/each}}
     </section>
     <section id="research">
-      <h2 href="#research" class="active-button">Research<h2/>
-      <div class="research-list">
-        <div class="hidden" id="research-container"></div>
+      <h2 href="#research" class="active-button">Research</h2>
+      <div class="hidden" id="research-container"></div>
+      <div class="research-list wrapper">
         {{#each research}}
-          <div class="active-button">
+          <div class="active-button item">
             <figure>
               <img src="assets/{{this.imageName}}" alt="" container-id="research-container" data-project="{{json this}}" class="research-card"/>
             </figure>
