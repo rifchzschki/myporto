@@ -2,7 +2,7 @@ emailjs.init("d2jL37oPNhu6IeXSC");
 
 document.addEventListener("DOMContentLoaded", () => {
   const containersProject = document.querySelectorAll(".wrapper");
-  
+
   containersProject.forEach((wrapper, index) => {
     wrapper.classList.add(`wrapper${index}`);
   });
@@ -11,34 +11,21 @@ document.addEventListener("DOMContentLoaded", () => {
     if (wrapper) {
       const items = wrapper.querySelectorAll(".item");
       const itemCount = items.length;
-      const maxLeft = Math.max(300*itemCount, wrapper.offsetWidth);
+      const maxLeft = Math.max(300 * itemCount, wrapper.offsetWidth);
 
-      items.forEach((item, index)=>{
+      items.forEach((item, index) => {
         item.style.left = `${maxLeft}px`;
-        item.style.animationDelay = `${(30 / itemCount) * (itemCount - (index+1)) * -1}s`;
-        console.log(`${(30 / itemCount) * (itemCount - (index+1)) * -1}s, ${index+1}, ${itemCount}`);
-      })
+        item.style.animationDelay = `${
+          (30 / itemCount) * (itemCount - (index + 1)) * -1
+        }s`;
+        console.log(
+          `${(30 / itemCount) * (itemCount - (index + 1)) * -1}s, ${
+            index + 1
+          }, ${itemCount}`
+        );
+      });
     }
-    
   }
-  // containersProject.forEach((wrapper,index) => {
-  //   if(wrapper.classList.contains(`wrapper${index+1}`)){
-  //     const items = wrapper.querySelectorAll(`.wrapper${index+1} .item`);
-  //     const itemCount = items.length; // Hitung jumlah items dalam wrapper ini
-  //     // const maxLeft = 200 * itemCount; // Pastikan tidak lebih kecil dari 100%
-  //     const maxLeft = Math.max(200 * itemCount, wrapper.offsetWidth); // Pastikan tidak lebih kecil dari 100%
-
-  //     items.forEach((item, index) => {
-  //         item.style.left = `${maxLeft}px`;
-    
-  //         // Hitung animation delay berdasarkan jumlah items di wrapper ini saja
-  //         item.style.animationDelay = `${(30 / itemCount) * (itemCount - (index+1)) * -1}s`;
-  //         console.log(`${(30 / itemCount) * (itemCount - (index+1)) * -1}s, ${index+1}, ${itemCount}`);
-  //       });
-        
-  //       console.log(`Wrapper dengan ${itemCount} dan ${maxLeft} items telah diperbarui.`);
-  //   }
-  // });
 
   // Event delegation untuk menangani klik pada .project-card
   containersProject.forEach((container) => {
@@ -98,50 +85,79 @@ document.addEventListener("DOMContentLoaded", () => {
     .getElementById("contact-form")
     .addEventListener("submit", function (event) {
       event.preventDefault();
+      let isValid = true; // Flag untuk mengecek apakah form valid
+      clearErrors(); // Hapus pesan error sebelumnya
 
-      emailjs.sendForm("service_kw2wl8l", "template_fniqwlc", this).then(
-        function () {
-          console.log("SUCCESS!");
-          alert("Message has been sent successfully");
+      // Ambil nilai input
+      const contactNumber = document
+        .getElementById("contact_number")
+        .value.trim();
+      const userName = document.getElementById("user_name").value.trim();
+      const userEmail = document.getElementById("user_email").value.trim();
+      const message = document.getElementById("message").value.trim();
 
-          // Reset form fields
-          document.querySelector('input[name="contact_number"]').value = "";
-          document.querySelector('input[name="user_name"]').value = "";
-          document.querySelector('input[name="user_email"]').value = "";
-          document.querySelector('textarea[name="message"]').value = "";
-        },
-        function (error) {
-          console.log("FAILED...", error);
-          alert("Message failed to send");
-        }
-      );
+      // Validasi Contact Number (wajib angka dan minimal 8 karakter)
+      if (contactNumber === "" || contactNumber.length < 8) {
+        showError("contact_number", "Contact number harus minimal 8 digit");
+        isValid = false;
+      }
+
+      // Validasi Name (tidak boleh kosong)
+      if (userName === "") {
+        showError("user_name", "Name tidak boleh kosong");
+        isValid = false;
+      }
+
+      // Validasi Email
+      if (!isValidEmail(userEmail)) {
+        showError("user_email", "Format email tidak valid");
+        isValid = false;
+      }
+
+      // Validasi Message (minimal 10 karakter)
+      if (message.length < 10) {
+        showError("message", "Message harus minimal 10 karakter");
+        isValid = false;
+      }
+
+      // Jika semua valid, kirim form
+      if (isValid) {
+        emailjs.sendForm("service_kw2wl8l", "template_fniqwlc", this).then(
+          function () {
+            alert("Message has been sent successfully");
+            document.querySelector('input[name="contact_number"]').value = "";
+            document.querySelector('input[name="user_name"]').value = "";
+            document.querySelector('input[name="user_email"]').value = "";
+            document.querySelector('textarea[name="message"]').value = "";
+          },
+          function (error) {
+            alert("Message failed to send");
+            console.log("FAILED...", error);
+          }
+        );
+      }
     });
-
-  // Circular scrolling
-  // const projectLists = document.querySelectorAll(".projects-list");
-
-  // projectLists.forEach((list) => {
-  //   if (list.querySelectorAll("img").length <= 3) return;
-  //   // Duplicate content for looping
-  //   list.innerHTML += list.innerHTML;
-
-  //   const container = list.closest(".projects-list-container");
-  //   container.addEventListener("scroll", () => {
-  //     const scrollWidth = list.scrollWidth / 2; // Original length (before duplication)
-
-  //     if (container.scrollLeft + 2 >= scrollWidth) {
-  //       console.log("reset ke awal");
-  //       container.scrollLeft = 0; // Reset to the beginning
-  //     } else if (container.scrollLeft === 0) {
-  //       console.log("reset ke akhir");
-  //       container.scrollLeft = scrollWidth / 2; // Reset to the end
-  //     }
-  //   });
-
-  //   // Set initial position in the middle
-  //   container.scrollLeft = list.scrollWidth / 4;
-  // });
 });
+
+// Fungsi untuk validasi format email
+function isValidEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+// Fungsi untuk menampilkan pesan error
+function showError(inputId, message) {
+  const inputField = document.getElementById(inputId);
+  const errorElement = document.createElement("small");
+  errorElement.className = "error-message";
+  errorElement.style.color = "red";
+  errorElement.innerText = message;
+  inputField.parentNode.appendChild(errorElement);
+}
+
+// Fungsi untuk menghapus pesan error sebelumnya
+function clearErrors() {
+  document.querySelectorAll(".error-message").forEach((el) => el.remove());
+}
 
 // Hide popup function
 function hidePopup(containerId) {
