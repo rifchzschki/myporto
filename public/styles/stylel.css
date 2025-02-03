@@ -156,6 +156,7 @@ h4 {
   font-weight: 800;
   font-style: normal;
   color: white;
+  margin: 5px 0px;
 }
 
 .active-status {
@@ -346,6 +347,7 @@ h4 {
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
   padding: 10px;
   box-sizing: border-box;
+  height:100%;
 }
 
 .contact {
