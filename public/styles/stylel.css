@@ -339,7 +339,7 @@ h4 {
   color: white;
 }
 
-.container-about .still-learn .card {
+.container-projects .still-learn .card {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
@@ -347,7 +347,7 @@ h4 {
   padding: 10px;
 }
 
-.container-about .card .skill-card {
+.container-projects .card .skill-card {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -715,39 +715,45 @@ h4 {
     padding-right: 0;
 
   }
+  .content-card-about div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
   /* Gaya untuk PC */
 }
 @media (max-width: 768px) {
   /* Gaya untuk tablet */
   p,span {
-    font-size: 10px;
+    font-size: 11px;
     text-align: justify;
     margin: 5px 0px;
   }
   h1 {
-    font-size: 20px;
+    font-size: 36px;
     text-align: center;
   }
   h2 {
-    font-size: 18px;
+    font-size: 31px;
   }
   h3 {
-    font-size: 16px;
+    font-size: 26px;
     text-align: center;
   }
   h4 {
     text-align: center;
-    font-size: 14px;
+    font-size: 21px;
   }
   h5 {
-    font-size: 12px;
+    font-size: 16px;
   }
   ul,ol {
-    font-size: 10px;
+    font-size: 11px;
     margin: 5px 0px;
   }
   a {
-    font-size: 10px;
+    font-size: 11px;
   }
   .fig-image img {
     height: 300px;
@@ -777,7 +783,27 @@ h4 {
   .popup-content ul li {
     font-size: 14px;
   }
-  .container-about .card .skill-card ul{
+  .content-card-about .read-more{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .content-card-about .read-more img{
+    width: 16px;
+    height: auto;
+  }
+
+  .content-card-about .desc-card{
+    display: none;
+  }
+  .container-projects .card .skill-card {
+    justify-content: center;
+    align-items: center;
+  }
+  .container-projects .card .skill-card ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -857,27 +883,6 @@ h4 {
   .content-card-about {
     width: 80%;
     justify-content: space-between;
-  }
-  .content-card-about div {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-  }
-  .content-card-about .read-more{
-    display: flex;
-    justify-content: center;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    text-decoration: underline;
-  }
-  .content-card-about .read-more img{
-    width: 16px;
-    height: auto;
-  }
-
-  .content-card-about .desc-card{
-    display: none;
   }
   .wrapper{
     height: 150px;
