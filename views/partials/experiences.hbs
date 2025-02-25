@@ -3,48 +3,54 @@
     <section>
       <h2 href="#about" class="active-button">Education</h2>
       {{#each education}}
-      <div class="active-button card">
-        <figure>
-          <img src="assets/logo-itb.jpg" alt="" />
-        </figure>
-        <div class="content-card-about">
-          <div>
-            <h3>{{this.institution}}</h3>
+        <div class="active-button card">
+          <figure>
+            <img src="assets/logo-itb.jpg" alt="" />
+          </figure>
+          <div class="content-card-about">
+            <div>
+              <h3>{{this.institution}}</h3>
+              <p class="year">2022 – Present</p>
+            </div>
+            <h4>{{this.major}}</h4>
+            <p class="desc-card">
+              Relevant courses:
+              {{#each this.relevantCourses}}
+                <span>
+                  {{this}}{{#unless @last}},{{/unless}}
+                </span>
+              {{/each}}
+            </p>
+            <button class="read-more"><img src="assets/down.png" alt=""></button>
           </div>
-          <h4>{{this.major}}</h4>
-          <p>
-            Relevant courses: 
-            {{#each this.relevantCourses}}
-            <span>
-              {{this}}{{#unless @last}},{{/unless}}
-            </span>
-            {{/each}}
-          </p>
-          <p>2022 – Present</p>
         </div>
-      </div>
       {{/each}}
     </section>
     <section id="internships">
       <h2 href="#internships" class="active-button">Internships</h2>
       {{#each intern}}
-      <div class="active-button card">
-        <figure>
-          <img src="assets/{{this.imageName}}" style="border-radius: 0%" alt="" />
-        </figure>
-        <div class="content-card-about">
-          <div>
-            <h3>{{this.company}}</h3>
+        <div class="active-button card">
+          <figure>
+            <img
+              src="assets/{{this.imageName}}"
+              style="border-radius: 0%"
+              alt=""
+            />
+          </figure>
+          <div class="content-card-about">
+            <div>
+              <h3>{{this.company}}</h3>
+              <p class="year">{{this.startDate}} – {{this.endDate}}</p>
+            </div>
+            <h4>{{this.role}}</h4>
+            <ul class="desc-card">
+              {{#each this.responsibilities}}
+                <li>• {{this}}</li>
+              {{/each}}
+            </ul>
+            <button class="read-more"><img src="assets/down.png" alt=""></button>
           </div>
-          <h4>{{this.role}}</h4>
-          <ul>
-            {{#each this.responsibilities}}
-              <li>• {{this}}</li>
-            {{/each}}
-          </ul>
-          <p>{{this.startDate}} – {{this.endDate}}</p>
         </div>
-      </div>
       {{/each}}
     </section>
     <section id="leaderships">
@@ -52,16 +58,21 @@
       {{#each leadership}}
         <div class="active-button card">
           <figure>
-            <img src="assets/{{this.imageName}}" style="border-radius: 0%" alt="" />
+            <img
+              src="assets/{{this.imageName}}"
+              style="border-radius: 0%"
+              alt=""
+            />
           </figure>
           <div class="content-card-about">
             <div>
               <h3>{{this.organization}}</h3>
             </div>
             <h4>{{this.role}}</h4>
-            <p>
+            <p class="desc-card">
               {{this.description}}
             </p>
+            <button class="read-more"><img src="assets/down.png" alt=""></button>
           </div>
         </div>
       {{/each}}
@@ -75,7 +86,7 @@
             <ul>
               {{#each this.skills}}
                 <li>{{this}}</li>
-              {{/each }}
+              {{/each}}
             </ul>
           </div>
         {{/each}}

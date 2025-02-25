@@ -94,6 +94,11 @@ article {
   margin: 0;
 }
 
+.year{
+  margin: 5px 0px;
+  text-align: right;
+}
+
 .home {
   display: flex;
   justify-content: center;
@@ -282,6 +287,9 @@ h4 {
   color: #4b5563;
 }
 
+.content-card-about .read-more{
+  display: none;
+}
 
 .projects {
   display: flex;
@@ -855,9 +863,28 @@ h4 {
     flex-direction: column;
     margin-bottom: 10px;
   }
+  .content-card-about .read-more{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .content-card-about .read-more img{
+    width: 16px;
+    height: auto;
+  }
+
+  .content-card-about .desc-card{
+    display: none;
+  }
+  .wrapper{
+    height: 150px;
+  }
   .item img{
-    max-width: 300px;
-    height: 200px;
+    max-width: 250px;
+    height: 150px;
   }
   .container-contact .card .contact-form {
    width: 80%; 

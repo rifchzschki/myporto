@@ -1,6 +1,22 @@
 emailjs.init("d2jL37oPNhu6IeXSC");
 
 document.addEventListener("DOMContentLoaded", () => {
+  const readmore = document.querySelectorAll(".read-more");
+
+  readmore.forEach((read) => {
+    read.addEventListener("click", function () {
+      const desc = this.parentElement.querySelector(".desc-card");
+      const img = this.querySelector("img");
+      if (desc.style.display === "none" || desc.style.display === "") {
+        desc.style.display = "block";
+        img.src = "assets/up.png"; // Ubah ke panah atas
+      } else {
+        desc.style.display = "none";
+        img.src = "assets/down.png"; // Ubah ke panah bawah
+      }
+    });
+  });
+
   const containersProject = document.querySelectorAll(".wrapper");
 
   containersProject.forEach((wrapper, index) => {
@@ -18,11 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
         item.style.animationDelay = `${
           (30 / itemCount) * (itemCount - (index + 1)) * -1
         }s`;
-        console.log(
-          `${(30 / itemCount) * (itemCount - (index + 1)) * -1}s, ${
-            index + 1
-          }, ${itemCount}`
-        );
+        // console.log(
+        //   `${(30 / itemCount) * (itemCount - (index + 1)) * -1}s, ${
+        //     index + 1
+        //   }, ${itemCount}`
+        // );
       });
     }
   }
@@ -33,7 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const card = event.target.closest(".project-card");
       if (!card) return; // Jika bukan elemen .project-card, abaikan
 
-      console.log("clicked");
       const data = JSON.parse(card.getAttribute("data-project"));
       const container_id = card.getAttribute("container-id");
       data["closeFunction"] = `hidePopup("${container_id}")`;
@@ -60,7 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const card = event.target.closest(".research-card");
       if (!card) return; // Jika bukan elemen .project-card, abaikan
 
-      console.log("clicked");
       const data = JSON.parse(card.getAttribute("data-project"));
       const container_id = card.getAttribute("container-id");
       data["closeFunction"] = `hidePopup("${container_id}")`;
@@ -161,7 +175,6 @@ function clearErrors() {
 
 // Hide popup function
 function hidePopup(containerId) {
-  console.log(containerId);
   const popup = document.getElementById(containerId);
   popup.replaceChildren();
 }

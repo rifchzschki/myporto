@@ -49,8 +49,10 @@ app.get("/research", (req, res) => {
   res.sendFile(path.join(__dirname, `/views/components/popup-research.hbs`));
 });
 
-// Jalankan server
+// Jalankan server (dev mode)
 // app.listen(PORT, () => {
 //   console.log(`Server is running on http://localhost:${PORT}`);
 // });
+
+// prod mode
 module.exports = app;
