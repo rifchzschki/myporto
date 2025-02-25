@@ -377,7 +377,6 @@ h4 {
 }
 
 .container-contact .card {
-  width: 80%;
   background-color: white;
   flex-direction: column;
   height: auto;
@@ -912,12 +911,6 @@ h4 {
   }
   .container-contact .card {
     padding: 20px 0px;
-  }
-  .container-contact a {
-    width: 40%;
-  }
-  .container-contact form {
-    width: 80%;
   }
   .container-contact label {
     font-size: 12px;
